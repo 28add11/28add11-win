@@ -131,10 +131,26 @@
 
 				<!--Figure of the chip's structure-->
 				<figure>
-					<img class="myimgs"src="inabakumori_thumb.jpg" width="320" height="180" alt="Chip block diagram">
-					<figcaption>A typical inabakumori thumbnail. <br>
-					Note how the background color is the same as this site's</figcaption>
+					<img class="myimgs"src="28add11_QOAdecode_(thumb).jpg" width="320" height="251" alt="Chip block diagram">
+					<figcaption>A block diagram of the chip's design</figcaption>
 				</figure>
+
+				<p>If you want to learn more about the chip's architecture, 
+					I recommend reading the 
+					<a href="https://github.com/28add11/tt07_qoa_decode/blob/main/docs/info.md">docs on the Github page for the chip</a>, 
+					but the process went relatively smoothly. I encountered some issues stemming from my lack of knowledge 
+					about circuits, but I ended up submitting a chip that I hope works, which is being manufactured with 
+					<a href="https://tinytapeout.com/runs/tt07/">Tiny Tapeout 07</a> and 
+					<a href="https://www.skywatertechnology.com/cmos/">Skywater's 130 Nm process node</a>.</p>
+
+				<h4>Conclusions</h4>
+				<p>Working on this chip has been very interesting, and I hope to continue working on similar projects in the future. 
+					The samples of this are expected in late December, and I will keep everything updated once they arrive. 
+					My only main concern is with the SPI interface, which, since it was implemented when I was still very new 
+					to Verilog, may have some issues. If I ever do a second revision, I would like to improve that. 
+					I also aim to improve the performance with parallel execution, since currently the chip can only do one 
+					thing at once, but no parts are re-used between different instructions. 
+					Going forward, I hope I can implement these changes one day, and help forward open-source silicon.</p>
 			</div>
 
 		</div>
