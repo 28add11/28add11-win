@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css"> <!-- Use stylesheet links to avoid repeated code on different pages-->
+	<title>28add11.win</title>
+</head>
+
+<body>
+<div class="wrapper"> <!-- wrapper div for formatting -->
+
+	<div class="navbar">
+		<a href="/">28add11.win</a> 
+		<a href="imgs.html">Images</a>
+		<a href="blag.html">Blog</a>
+		<a href="programming.html"><b>Programming</b></a> <!-- Bolding the current page link -->
+	</div>
+
+	<div class="content" id="homepage">
+		<h2>Programming</h2>
+
+		<figure>
+			<img class="myimgs"src="computer_thumb.jpg" width="320" height="180" alt="My computer">
+			<figcaption>My computer</figcaption>
+		</figure>
+
+		<h3 id="my_setup">About My programming setup</h3> <!-- ID is here to allow for linking using in-page # links-->
+		<p>
+			I know a few different programming languages, which I've been learning since summer 2021. In that time, I've learned 
+			C, Python, and now HTML/CSS. In order to program, I use Windows and Visual Studio Code to write code, then, if I'm using C, 
+			compile it using WSL and GCC. At home, I program on my custom desktop, which has the following specs:
+		</p>
+		<ul>
+			<li>Ryzen 5 5600G CPU</li>
+			<li>Intel Arc A750 GPU</li>
+			<li>Gigabyte AORUS A520M Motherboard</li>
+			<li>16 GB DDR4 3200 RAM</li>
+			<li>1TB SSD</li>
+			<li>1TB HDD x2</li>
+		</ul>
+		<p>
+			On the go, I use my laptop, which has a Ryzen 7 7730U CPU and less storage, but similar specs otherwise.
+		</p>
+
+		<figure>
+			<img class="myimgs"src="gpu_thumb.jpg" width="320" height="180" alt="My GPU">
+			<figcaption>A part for my computer</figcaption>
+		</figure>
+
+		<h3 id="programs_i_have_made">Programs I have made</h3>
+		<h4><a href="https://github.com/28add11/mastermind/tree/master">Mastermind Game</a></h4>
+		<img src="mastermind.jpg" width="320" height="253" alt="screenshot of mastermind game">
+		<p>This is an implementation of the game "Mastermind" in python/pygame. You can download it from Github.
+			I made this around early 2022, and was one of the first programs I felt proud enough to relase to the world.
+		</p>
+	</div>
+
+	<div class="footer">
+		<footer>
+			Copyright © 2023 Nicholas West <!--Copyright symbol is just a unicode character, the wonders of unicode!-->
+		</footer>
+	</div>
+
+</div>
+</body>

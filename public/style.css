@@ -1,0 +1,135 @@
+/* remove default margin and padding so navbar colors take up full top segment */
+body, html{
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(178, 178, 178);
+	font-family: "Candara", sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+ 	display: grid;
+  	grid-template-rows: auto 1fr auto;
+}
+
+.navbar{
+	background-color: rgb(59, 78, 78);
+	overflow: hidden; /*specifies what to do with content that runs over the limit*/
+	top: 0;
+	height: 3.2em;
+	font-family: monospace;
+	font-size: 15px;
+}
+.navbar a{
+	float: left;
+	padding: 1em;
+	color: rgb(178, 178, 178);
+	text-align: center;
+	text-decoration: none;
+}
+.navbar a:hover{ /*Make links a different color when highlighted, for clarity*/
+	color: rgb(123, 123, 123);
+}
+
+.footer{ /*Div for footer and footer are different, since one has content (copyright warning) and the other has formatting*/
+	background-color: rgb(59, 78, 78);
+	overflow: hidden;
+	bottom: 0;
+	position: relative; /*keeps it at the bottom of the screen*/
+	width: 100%;
+	height: 3em;
+}
+.footer footer{
+	color: rgb(178, 178, 178);
+	font-family: monospace;
+	font-size: 15px;
+	padding: 1em;
+	text-align: right;
+	text-decoration: none;
+}
+
+.content{
+	text-align: left;
+	height: auto;
+	color: rgb(38, 41, 33);
+	margin: 20px; /*We have to add padding here, since we removed the browser default*/
+}
+
+.content figure{
+	float: right;
+	margin: 1em;
+}
+.content a:link{
+	color: rgb(79, 79, 79);
+}
+.content a:hover{
+	color: rgb(45, 45, 45);
+}
+.content a:visited{
+	color: rgb(79, 79, 79);
+}
+.content p{
+	width: 75%;
+}
+.content video{
+	float: right;
+}
+
+.image_links{
+	margin: 0.5em;
+	text-decoration: none; /*Artifacts are created if this is not included*/
+	text-align: center;
+}
+.image_links img{
+	border: 1px;
+	border-color: rgb(59, 78, 78);
+	border-style: solid;
+}
+
+.img_block {
+	text-align: center;
+}
+
+.page-nav{
+	border: 1em;
+	border-color: rgb(218, 218, 218);
+	border-style: solid;
+	border-radius: 1em;
+	margin: 1em;
+	float: right;
+	background-color: rgb(218, 218, 218);
+
+}
+.page-nav ul{
+	padding-left: 1em;
+}
+
+.blog_post_section{
+	clear: right;
+	border: 1em;
+	border-color: rgb(218, 218, 218);
+	border-style: solid;
+}
+
+.blog_post{
+	padding: 1em;
+	border: 2px;
+	border-color: rgb(59, 78, 78);
+	border-style: solid;
+}
+
+.notice{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+	
+}
+.notice #title{
+	border-collapse: collapse;
+	color: red;
+	font-size: 1.3em; /*Using different font size here rather than just a header tag due to headers adding extra margin*/
+			padding: 0.5em;
+}
