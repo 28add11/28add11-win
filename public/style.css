@@ -118,6 +118,7 @@ body, html{
 	border: 2px;
 	border-color: rgb(59, 78, 78);
 	border-style: solid;
+	overflow: auto;
 }
 
 .notice{
