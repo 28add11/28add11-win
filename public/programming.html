@@ -20,7 +20,7 @@
 
 		<figure>
 			<img class="myimgs"src="computer_thumb.jpg" width="320" height="180" alt="My computer">
-			<figcaption>My computer</figcaption>
+			<figcaption>The PC I do most of my programming on</figcaption>
 		</figure>
 
 		<h3 id="my_setup">About My programming setup</h3> <!-- ID is here to allow for linking using in-page # links-->
@@ -40,23 +40,44 @@
 		<p>
 			On the go, I use my laptop, which has a Ryzen 7 7730U CPU and less storage, but similar specs otherwise.
 		</p>
+		<p>
+			I aim to go to university for computer engineering, and focus on bringing my interests of 
+			electronics and programming together. 
+		</p>
 
-		<figure>
-			<img class="myimgs"src="gpu_thumb.jpg" width="320" height="180" alt="My GPU">
-			<figcaption>A part for my computer</figcaption>
-		</figure>
+		<div class="page-nav" id="programming-posts-nav">
+			<ul>
+				<li><a href="#mastermind">Mastermind game</a></li>
+				<li><a href="#QOA_ASIC">Custom audio decoder ASIC</a></li>
+			</ul>
+		</div>
 
 		<h3 id="programs_i_have_made">Programs I have made</h3>
-		<h4><a href="https://github.com/28add11/mastermind/tree/master">Mastermind Game</a></h4>
+
+		<hr>
+
+		<h4 id="mastermind"><a href="https://github.com/28add11/mastermind/tree/master">Mastermind Game</a></h4>
 		<img src="mastermind.jpg" width="320" height="253" alt="screenshot of mastermind game">
 		<p>This is an implementation of the game "Mastermind" in python/pygame. You can download it from Github.
 			I made this around early 2022, and was one of the first programs I felt proud enough to relase to the world.
 		</p>
+
+		<hr>
+
+		<h4 id="QOA_ASIC"><a href="https://github.com/28add11/tt07_qoa_decode">QOA decoder ASIC</a></h4>
+		<img src="gds_thumb.jpg" width="198" height="278" alt="Render of the chip">
+		<p>This is a custom chip, produced with <a href="https://tinytapeout.com/">Tiny Tapeout 07</a>, that decodes the 
+			<a href="https://qoaformat.org/">QOA audio format</a>. You can read more about it on the <a href="blag.html/#QOA_ASIC">
+				blog</a>. I will update this page once I get the sample!
+		</p>
+
+		<hr>
+
 	</div>
 
 	<div class="footer">
 		<footer>
-			Copyright © 2023 Nicholas West <!--Copyright symbol is just a unicode character, the wonders of unicode!-->
+			Copyright © 2023 Nicholas West
 		</footer>
 	</div>
 
