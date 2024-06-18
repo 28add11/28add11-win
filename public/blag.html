@@ -95,6 +95,48 @@
 						I have this site!</p>
 			</div>
 
+			<div class="blog_post" id="QOA_ASIC">
+				<h3>Making a QOA decoder ASIC</h3>
+				<p>I have always been interested in the chips that power computers. 
+					Throughout the years I have learned a lot about the process and what makes a computer tick, 
+					but I never had the ability to make one of these chips. Eventually, through the Tiny Tapeout project, 
+					I managed to make my own one of these chips that contribute to the whole world, 
+					<a href="https://github.com/28add11/tt07_qoa_decode">a custom QOA decoder ASIC</a>.</p>
+
+				<h4>Tiny Tapeout</h4>
+				<p>Through a newsletter, I came across <a href="https://tinytapeout.com/">Tiny Tapeout</a>, 
+					a multi-project wafer program that allowed for relatively cheap development of custom silicon. 
+					By that point I knew that I wanted to do something involving the semiconductor industry, 
+					but I didn't really know where to start, but Tiny Tapeout enabled me to work on this project. 
+					It took me a few more months to start working on the chip, but eventually, inspiration struck, 
+					and I decided on a decoder for the <a href="https://qoaformat.org/">QOA audio format</a>. 
+					The format is a PCM audio codec designed for simplicity and speed, much like its sister image format 
+					<a href="https://qoiformat.org/">QOI</a>.</p>
+
+				<h4>Designing the Chip</h4>
+				<p>To design the chip, step number one was to learn the tools to make it. 
+					Modern silicon uses a language called Verilog to define what circuits to make and how the chip should function, 
+					but I came into this knowing none. I started off learning by using the tutorial on the 
+					<a href="https://nandland.com/">Nandland</a> website 
+					and made a custom adder. The process to turn this code into an actual design file, called a GDS, 
+					is all accomplished through the Tiny Tapeout GDS action on Github, making it all nice and simple.</p>
+
+				<p>After learning the language and tools the next step was to make the chip itself. 
+					The heart of the QOA format is the LMS predicter, which uses a look up table of dequantized values along 
+					with two, 16 bits wide and four deep banks of memory containing the values for the predictor itself, 
+					called history and weights. I decided to split the predictor into some segments: ROM, Multiplier, 
+					and history/weights. I would also need an interface to communicate with the chip, so I could actually use it. 
+					Because Tiny Tapeout has a limited amount of I/O, and because of its ubiquity, I settled on using an SPI bus, 
+					with a custom protocol to communicate what the chip is supposed to do. </p>
+
+				<!--Figure of the chip's structure-->
+				<figure>
+					<img class="myimgs"src="inabakumori_thumb.jpg" width="320" height="180" alt="Chip block diagram">
+					<figcaption>A typical inabakumori thumbnail. <br>
+					Note how the background color is the same as this site's</figcaption>
+				</figure>
+			</div>
+
 		</div>
 	</div>
 
