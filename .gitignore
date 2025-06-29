@@ -68,3 +68,6 @@ node_modules/
 
 #large images
 public/images/
+
+# Firebase executable lol
+*.exe 
