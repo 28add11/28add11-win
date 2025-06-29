@@ -8,9 +8,10 @@
 
 <body>
 <div class="wrapper">
+<div class="contentPanel">
 
 	<div class="navbar">
-		<a href="/">28add11.win</a>
+		<a href="index.html">28add11.win</a>
 		<a href="imgs.html">Images</a>
 		<a href="blag.html"><b>Blog</b></a> <!-- Bolding the current page link -->
 		<a href="programming.html">Programming</a>
@@ -22,79 +23,21 @@
 		<h3 id="about_the_blog">About the Blog</h3>
 		<p>
 			Here is where I put any posts I want to make about various projects, trips, or things I find interesting.
-			On the right, It is organized by category.
+			Newest posts first, you can find some older ones on the right.
 		</p>
 
 		<div class="page-nav" id="blog-posts-nav">
 			<ul>
 				<li>Programming 
 					<ul> <!--List within a list to show categories and subcategories-->
-						<li><a href="#making_this_site">Making this site</a></li>
 						<li><a href="#QOA_ASIC">A QOA decoder ASIC</a></li>
+						<li><a href="#making_this_site(OLD)">Making this site</a></li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 
 		<div class="blog_post_section" id="posts">
-
-			<div class="blog_post" id="making_this_site">
-				<h3>Making this site</h3>
-				<p>So, for a school project, I was tasked with making this website. 
-					Since I had a bit of experience with HTML before hand and needed a website of my own anyways, 
-					I decided to go all out and make this. </p>
-
-					<h4>Design</h4>
-					<figure>
-						<img class="myimgs"src="inabakumori_thumb.jpg" width="320" height="180" alt="Inabakumori thumbnail">
-						<figcaption>A typical inabakumori thumbnail. <br>
-						Note how the background color is the same as this site's</figcaption>
-					</figure>
-					<p>First was deciding what I actually wanted this site to be.
-					With the (somewhat self imposed) restriction of not being able to use JavaScript, and my dislike
-					for overly modern, complex webpages, I decided that I would go with something very simple. I took
-					inspiration from the site <a href="https://alf-s-room.com/">"Alf's Room"</a> in its simplicity
-					and clear passionate intent, and the focus on stuff the author finds interesting, rather than what 
-					will look good and do well. After getting the idea of what I wanted the site to be like, it was 
-					time to decide on theming. I wanted it to be simple again, partially out of desire to keep the code 
-					tolerable, and partly out of the fact that I didn't want my eyes to be confused by what I was 
-					looking at. The color scheme was inspired by the musical artist 
-					<a href="https://www.youtube.com/c/inabakumori">Inabakumori</a>, who typically uses black 
-					and grey videos to accompany his music. After this, I spent some time comparing some colors that are 
-					built into HTML, landing on a slightly modified “Dark Slate Grey.” With these two colors in mind, I 
-					quickly scratched up a basic version of how I want it to look, with a navigation header, content, 
-					and a footer. I decided to have a lot of page specific elements, with wider page categories, to 
-					keep what I wanted to get across on that page more pertinent. To avoid making copious amounts of 
-					work for myself though, I still would follow a similar template. Finally was deciding what I actually 
-					wanted on the site. I needed a homepage, so that was order number one, and I've had the idea of 
-					sharing some of the images I take freely for a while now, so that was on the list as well. I also 
-					wanted a blog, since sharing my various (minor) discoveries with the world seems like a noble enough 
-					cause. Finally, I decided on adding the programming tab, since if I ever make more significant 
-					programs, being able to share them would be very nice.</p>
-
-					<h4>Programming It</h4>
-					<p>Now, it was time to put it together! After some very basic formatting, the first thing to do was 
-						the header and footer. The header was simple enough to adapt from a tutorial, but I can't say 
-						the same for the footer. Many tutorials just lied about what kind of formatting was needed, and 
-						broke entirely when scrolling was involved. I had to rework it multiple times throughout the 
-						project, since it was pointlessly complicated and convoluted to just make an element stay at the 
-						bottom of the screen. After that, the rest of the homepage was relatively uncomplicated. Next 
-						up was the image tab. Considering that I was going to actually host this online, I had to keep 
-						in mind the cost of bandwidth. Because of this, all the images had to have two versions, one 
-						small in resolution to keep bandwidth down when displaying them all, then one that was full size 
-						for people to download and use. I was inspired by Wikipedia's approach to this, with a small 
-						image in their articles, and a clickable version leading to a different page with the full image. 
-						I knew that copy and pasting some code then modifying it for every image would be unfeasible, 
-						so I had to make a script to do it for me. I made a short python script to automate the task, 
-						which worked remarkably well! After that, it was time to start working on the blog. The main 
-						challenge was getting the visual difference between standard page content and the blog posts 
-						themselves. Because the navigation was a separate div, there were issues with it clipping into 
-						the same space. After that, the main issue was page scrolling. Because I was using different 
-						position attributes, the footer didn't move when scrolling started. That was resolved by (ab)using 
-						the navigation panel, and pushing the div below it. After that, it was mostly smooth sailing! 
-						Attached is a video explaining some of the design decisions more in depth. After all that, Now 
-						I have this site!</p>
-			</div>
 
 			<div class="blog_post" id="QOA_ASIC">
 				<h3>Making a QOA decoder ASIC</h3>
@@ -157,6 +100,64 @@
 					Going forward, I hope I can implement these changes one day, and improve as a computer engineer.</p>
 			</div>
 
+			<div class="blog_post" id="making_this_site(OLD)">
+				<h3>Making this site <b>(OLD)</b></h3>
+				<p>So, for a school project, I was tasked with making this website. 
+					Since I had a bit of experience with HTML before hand and needed a website of my own anyways, 
+					I decided to go all out and make this. </p>
+
+					<h4>Design</h4>
+					<figure>
+						<img class="myimgs"src="inabakumori_thumb.jpg" width="320" height="180" alt="Inabakumori thumbnail">
+						<figcaption>A typical inabakumori thumbnail. <br>
+						Note how the background color is the same as this site's</figcaption>
+					</figure>
+					<p>First was deciding what I actually wanted this site to be.
+					With the (somewhat self imposed) restriction of not being able to use JavaScript, and my dislike
+					for overly modern, complex webpages, I decided that I would go with something very simple. I took
+					inspiration from the site <a href="https://alf-s-room.com/">"Alf's Room"</a> in its simplicity
+					and clear passionate intent, and the focus on stuff the author finds interesting, rather than what 
+					will look good and do well. After getting the idea of what I wanted the site to be like, it was 
+					time to decide on theming. I wanted it to be simple again, partially out of desire to keep the code 
+					tolerable, and partly out of the fact that I didn't want my eyes to be confused by what I was 
+					looking at. The color scheme was inspired by the musical artist 
+					<a href="https://www.youtube.com/c/inabakumori">Inabakumori</a>, who typically uses black 
+					and grey videos to accompany his music. After this, I spent some time comparing some colors that are 
+					built into HTML, landing on a slightly modified “Dark Slate Grey.” With these two colors in mind, I 
+					quickly scratched up a basic version of how I want it to look, with a navigation header, content, 
+					and a footer. I decided to have a lot of page specific elements, with wider page categories, to 
+					keep what I wanted to get across on that page more pertinent. To avoid making copious amounts of 
+					work for myself though, I still would follow a similar template. Finally was deciding what I actually 
+					wanted on the site. I needed a homepage, so that was order number one, and I've had the idea of 
+					sharing some of the images I take freely for a while now, so that was on the list as well. I also 
+					wanted a blog, since sharing my various (minor) discoveries with the world seems like a noble enough 
+					cause. Finally, I decided on adding the programming tab, since if I ever make more significant 
+					programs, being able to share them would be very nice.</p>
+
+					<h4>Programming It</h4>
+					<p>Now, it was time to put it together! After some very basic formatting, the first thing to do was 
+						the header and footer. The header was simple enough to adapt from a tutorial, but I can't say 
+						the same for the footer. Many tutorials just lied about what kind of formatting was needed, and 
+						broke entirely when scrolling was involved. I had to rework it multiple times throughout the 
+						project, since it was pointlessly complicated and convoluted to just make an element stay at the 
+						bottom of the screen. After that, the rest of the homepage was relatively uncomplicated. Next 
+						up was the image tab. Considering that I was going to actually host this online, I had to keep 
+						in mind the cost of bandwidth. Because of this, all the images had to have two versions, one 
+						small in resolution to keep bandwidth down when displaying them all, then one that was full size 
+						for people to download and use. I was inspired by Wikipedia's approach to this, with a small 
+						image in their articles, and a clickable version leading to a different page with the full image. 
+						I knew that copy and pasting some code then modifying it for every image would be unfeasible, 
+						so I had to make a script to do it for me. I made a short python script to automate the task, 
+						which worked remarkably well! After that, it was time to start working on the blog. The main 
+						challenge was getting the visual difference between standard page content and the blog posts 
+						themselves. Because the navigation was a separate div, there were issues with it clipping into 
+						the same space. After that, the main issue was page scrolling. Because I was using different 
+						position attributes, the footer didn't move when scrolling started. That was resolved by (ab)using 
+						the navigation panel, and pushing the div below it. After that, it was mostly smooth sailing! 
+						Attached is a video explaining some of the design decisions more in depth. After all that, Now 
+						I have this site!</p>
+			</div>
+
 		</div>
 	</div>
 
@@ -166,5 +167,6 @@
 		</footer>
 	</div>
 
+</div>
 </div>
 </body>

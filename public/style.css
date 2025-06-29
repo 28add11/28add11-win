@@ -55,6 +55,7 @@ body, html{
 
 .footer{ /*Div for footer and footer are different, since one has content (copyright warning) and the other has formatting*/
 	background-color: rgb(59, 78, 78);
+	border-radius: 10px;
 	overflow: hidden;
 	bottom: 0;
 	position: relative; /*keeps it at the bottom of the screen*/
@@ -118,13 +119,13 @@ body, html{
 
 .page-nav{
 	border: 1em;
-	border-color: rgb(218, 218, 218);
+	border-color: rgb(178, 178, 178);
 	border-style: solid;
 	border-radius: 1em;
 	margin: 1em;
 	float: right;
-	background-color: rgb(218, 218, 218);
-
+	background-color: rgb(178, 178, 178);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .page-nav ul{
 	padding-left: 1em;
@@ -133,28 +134,20 @@ body, html{
 .blog_post_section{
 	clear: right;
 	border: 1em;
-	border-color: rgb(218, 218, 218);
+	background-color: rgb(178, 178, 178);
+	border-color: rgb(178, 178, 178);
+	border-radius: 10px;;
 	border-style: solid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog_post{
 	padding: 1em;
+	margin: 5px;
 	border: 2px;
+	border-radius: 10px;
 	border-color: rgb(59, 78, 78);
 	border-style: solid;
+	background: rgb(205, 211, 224);
 	overflow: auto;
-}
-
-.notice{
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	font-size: 14px;
-	
-}
-.notice #title{
-	border-collapse: collapse;
-	color: red;
-	font-size: 1.3em; /*Using different font size here rather than just a header tag due to headers adding extra margin*/
-			padding: 0.5em;
 }
